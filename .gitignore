@@ -1,0 +1,47 @@
+# 🚫 Ignore Tableau backup and logs
+*.log
+*.bak
+*.tmp
+~$*
+
+# 🚫 Ignore Tableau temp & auto-save files (if any)
+*.twb-autosave
+*.twbx-autosave
+
+# 🧹 Ignore environment files (if using Python/R integration)
+.env
+secrets.env
+*.ipynb_checkpoints/
+
+# 🚫 Ignore virtual environments (Python)
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# 🚫 Ignore OS-specific junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 🚫 Ignore IDE/editor configs
+.vscode/
+.idea/
+
+# 🚫 Ignore zip/rar archives (optional)
+*.zip
+*.rar
+
+# 🔒 Ignore local Tableau extract cache (optional)
+*.hyper
+*.tde
+
+# ✅ Allow all Tableau files
+!*.twb
+!*.twbx
+
+# ✅ Allow CSVs, Excel files for dashboard data
+!*.csv
+!*.xlsx
